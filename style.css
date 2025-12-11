@@ -54,6 +54,39 @@ footer {
   .hero h1 { font-size: 32px; }
   .hero { height: 60vh; }
 }
+/* ---------- Background Slideshow ---------- */
+.bg-slideshow {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.bg-slideshow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: brightness(.7);
+  animation: bgChange 20s infinite linear;
+}
+
+.bg-slideshow > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes bgChange {
+  0%   { background-image: url('images/bg1.jpg'); }
+  25%  { background-image: url('images/bg2.jpg'); }
+  50%  { background-image: url('images/bg3.jpg'); }
+  75%  { background-image: url('images/bg4.jpg'); }
+  100% { background-image: url('images/bg1.jpg'); }
+}
+
 
 .tnc-btn {
   background: #00e676;
@@ -111,6 +144,7 @@ footer {
   from { transform: scale(0.6); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
 
 .section, .plan-box, .explore-item {
   animation: fadeIn 1s ease;
