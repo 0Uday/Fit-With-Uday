@@ -15,6 +15,7 @@
   <a href="#plans">Plans</a>
   <a href="#explore">Explore</a>
   <a href="#contact">Contact</a>
+  <button class="tnc-btn" onclick="openTnC()">Terms</button>
 </nav>
 
 <section class="hero" id="home">
@@ -83,6 +84,21 @@
 
   </div>
 </section>
+<div id="tncModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeTnC()">&times;</span>
+    <h2>Fitness Club Terms & Conditions</h2>
+
+    <p><b>Membership Eligibility:</b> Membership is open to individuals above 16 years.</p>
+    <p><b>Fees & Payment:</b> Fees must be paid in advance. Late fees may apply.</p>
+    <p><b>Facility Usage:</b> Members use equipment at their own risk.</p>
+    <p><b>Health & Safety:</b> Consult a doctor before workouts.</p>
+    <p><b>Code of Conduct:</b> Misbehavior may lead to suspension.</p>
+    <p><b>Refunds:</b> 30-day notice required for cancellation.</p>
+    
+  </div>
+</div>
+
 
 
 
@@ -103,5 +119,6 @@
 
 
 <script src="script.js"></script>
+<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
 </body>
 </html>
