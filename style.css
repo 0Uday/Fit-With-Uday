@@ -118,6 +118,10 @@ body.dark-mode {
   75%  { background-image: url('images/bg4.jpg'); }
   100% { background-image: url('images/bg1.jpg'); }
 }
+.rebase-test {
+  border: 2px dashed red;
+}
+
 
 
 .tnc-btn {
