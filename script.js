@@ -9,6 +9,8 @@ function openTnC() {
 function closeTnC() {
     document.getElementById("tncModal").style.display = "none";
 }
+// practice commit: js
+
 
 window.onclick = function(e) {
   if (e.target == document.getElementById("tncModal")) {
