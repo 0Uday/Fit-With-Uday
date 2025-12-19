@@ -49,6 +49,8 @@ footer {
   background: #111; padding: 20px; color: white;
   text-align: center; margin-top: 40px;
 }
+/* practice commit: css */
+
 
 @media(max-width: 768px) {
   .hero h1 { font-size: 32px; }
